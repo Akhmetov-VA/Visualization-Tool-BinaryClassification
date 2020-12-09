@@ -7,7 +7,7 @@ def main():
 
     params = {
         'X': X, 'y': y, 'clf_separator_name': 'log_reg', 'data_dir_path': 'data',
-        'balance_method_name': 'undersample_centroid', 'sampling_strategy': 0.5, 'num_points_per_dim':4,
+        'balance_method_name': 'undersample_centroid', 'sampling_strategy': 0.5, 'num_points_per_dim': 4,
         'save_rotate_gif': True, 'save_2d_img': True, 'elev': 10, 'seed': 47, 'n_neighbors': 10,
         'dim_red_method_name': 'all'
     }
