@@ -200,12 +200,15 @@ class Visualizer(DecisionSurfaceGrider):
 
         if title is not None:
             plt.title(title)
+
         else:
             title = 'some line'
-        plt.show()
 
         if self.save_2d_img:
             plt.savefig(os.path.join(self.data_dir_path, title + '.jpg'))
+
+        else:
+            plt.show()
 
     def save_rotate_plot(self, title=None):
         '''
@@ -257,7 +260,7 @@ class Visualizer(DecisionSurfaceGrider):
         '''
         # self.scale_2d_data()
 
-        plt.figure()
+        fig = plt.figure()
         if self.clf_separator is not None:
             plt.scatter(self.X_surf[:, 0], self.X_surf[:, 1], c=self.y_surf, alpha=0.05, cmap='YlGn')
 
@@ -266,10 +269,11 @@ class Visualizer(DecisionSurfaceGrider):
         if title:
             plt.title(title)
 
-        plt.show()
+        if not self.save_2d_img:
+            fig.show()
 
-        if self.save_2d_img:
-            plt.savefig(os.path.join(self.data_dir_path, '2d',  title + '.jpg'))
+        else:
+            fig.savefig(os.path.join(self.data_dir_path, '2d',  title + '.jpg'))
 
     def plot_3d_embed(self, title=None):
         '''
