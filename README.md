@@ -8,6 +8,10 @@ Useful tool for dimensionality reduction visualization
 
 ## Installation
 
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage
 
 ```python
