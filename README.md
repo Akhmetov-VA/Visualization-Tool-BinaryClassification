@@ -8,9 +8,9 @@ Useful tool for dimensionality reduction visualization
 
 ## Visuals
 
-![2d demo](images_demo/PCA 2d in 0.006 s.jpg)
+![2d demo](https://github.com/Akhmetov-VA/Visualization-Tool-BinaryClassification/blob/master/images_demo/PCA%202d%20in%200.006%20s.jpg)
 
-![3d demo](images_demo/rotate azimuth PCA 3d in 0.005 s.gif)
+![3d demo](https://github.com/Akhmetov-VA/Visualization-Tool-BinaryClassification/blob/master/images_demo/rotate%20azimuth%20PCA%203d%20in%200.005%20s.gif)
 
 ## Installation
 
