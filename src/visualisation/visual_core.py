@@ -401,10 +401,10 @@ class DimRedTool(Visualizer, DimRedConfig):
         else:
             #  in Random Trees embeddings all little bit harder
             #  Random Trees is hasher of features after it Truncated SVD
-            hasher, self.dim_reducer = self.dict_methods[method_name].set_params(**{'random_state': self.seed})
+            hasher, self.dim_reducer = self.dict_methods[method_name]
             self.dim_reducer.set_params(**method_params)
             t0 = time()
-            X_hashed = hasher.fit_transform(self.X)
+            X_hashed = hasher.set_params(**{'random_state': self.seed}).fit_transform(self.X)
             self.dim_reducer.set_params()
             X = self.dim_reducer.fit_transform(X_hashed)
 
@@ -433,4 +433,6 @@ class DimRedTool(Visualizer, DimRedConfig):
             self.X_3d, title = self.dim_reduction(method_name, n_components=3)
 
             self.plot_3d_embed(title)
+
+        print(f'{method_name} method was ended')
 

@@ -6,6 +6,12 @@ Visualization tool
 
 Useful tool for dimensionality reduction visualization 
 
+## Visuals
+
+![2d demo](images_demo/PCA 2d in 0.006 s.jpg)
+
+![3d demo](images_demo/rotate azimuth PCA 3d in 0.005 s.gif)
+
 ## Installation
 
 ```bash

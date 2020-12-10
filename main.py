@@ -12,6 +12,13 @@ def main():
         'dim_red_method_name': 'all'
     }
 
+    params = {
+        'X': X, 'y': y, 'clf_separator_name': None, 'data_dir_path': 'data',
+        'balance_method_name': 'undersample_centroid', 'sampling_strategy': 0.5, 'num_points_per_dim': 4,
+        'save_rotate_gif': False, 'save_2d_img': False, 'elev': 10, 'seed': 47, 'n_neighbors': 10,
+        'dim_red_method_name': 'all'
+    }
+
     dim_red_tool = DimRedTool(**params)
     dim_red_tool.pca_var_info()
     dim_red_tool.visualize_dim_red()
